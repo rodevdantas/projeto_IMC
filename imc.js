@@ -58,3 +58,6 @@ function calcularIMC()
 
 
 }
+// Desafio: colocar a altura sem o ponto/vírgula e o sistema entender e melhorar o layout
+
+
