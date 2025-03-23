@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(13, 15, 54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper {
+    background: rgb(23, 60, 182);
+    width: 420px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px 6px black
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-size: 30px;
+    color: rgb(205, 213, 238)
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display:flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input {
+    height: 40px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(236, 226, 227);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+}
+
+button:hover {
+    background: rgb(129, 179, 127);
+}
+
+.painelResultado {
+    margin-top: 30px;
+    background: rgb(126, 128, 253);
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 5px solid black;
+    font-style: italic;
+}
+
