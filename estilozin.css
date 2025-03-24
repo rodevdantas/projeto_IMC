@@ -6,7 +6,7 @@
 }
 
 body {
-    background: rgb(13, 15, 54);
+    background: rgb(240, 242, 245);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,11 +14,18 @@ body {
 }
 
 .wrapper {
-    background: rgb(23, 60, 182);
+    background: rgb(220, 225, 230);
     width: 420px;
-    padding: 40px 20px;
+    padding: 50px 25px;
     border-radius: 20px;
-    box-shadow: 0px 8px 20px 6px black
+    box-shadow: 0px 6px 15px rgb(0,0,0,0.2);
+}
+
+img {
+    max-width: 82px;
+    margin: 0 auto 45px auto;
+    display: block;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
 }
 
 .cabecalho {
@@ -27,8 +34,8 @@ body {
 }
 
 .titulo {
-    font-size: 30px;
-    color: rgb(205, 213, 238)
+    font-size: 32px;
+    color: rgb(40, 40, 40)
 }
 
 .formulario {
@@ -50,31 +57,40 @@ body {
 .campo input {
     height: 40px;
     padding: 8px;
-    border: 1px solid black;
+    border: 1px solid rgb(180,180,180);
     border-radius: 8px;
     font-size: 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.campo input:focus {
+    border-color: rgb(50, 130, 200);
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(50, 130, 200, 0.5);
 }
 
 button {
     height: 45px;
     border: none;
     border-radius: 7px;
-    background-color: rgb(236, 226, 227);
+    font-size: 15.5px;
+    background-color: rgb(50, 130, 200);
+    color: white;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.8s ease;
 }
 
 button:hover {
-    background: rgb(129, 179, 127);
+    background: rgb(50, 180, 90);
 }
 
 .painelResultado {
     margin-top: 30px;
-    background: rgb(126, 128, 253);
+    background: rgb(240, 242, 245);
     padding: 20px;
     border-radius: 6px;
-    border-left: 5px solid black;
+    border-left: 5px solid rgb(50,130,200);
     font-style: italic;
 }
 
