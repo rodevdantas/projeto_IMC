@@ -21,6 +21,7 @@ function calcularIMC()
     {    alert("Por favor, insira uma altura válida (em cm ou m).")
 
     }
+    
     if (nomeUsuario !== '' && alturaUsuario !== '' && pesoUsuario !== '') {
         
         var imc = (pesoUsuario / (alturaUsuario * alturaUsuario)).toFixed(1);
