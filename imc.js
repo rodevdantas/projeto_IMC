@@ -8,11 +8,7 @@ function calcularIMC()
     var alturaUsuario = parseFloat(document.getElementById('inputAltura').value);
     var pesoUsuario = parseFloat(document.getElementById('inputPeso').value);
     var resultado = document.getElementById('exibirResultado');
-
-    var imc = (pesoUsuario / (alturaUsuario * alturaUsuario)).toFixed(1);
-        
-    var status = '';
-
+    
     if (alturaUsuario >= 3 && alturaUsuario <= 300 ) {
         alturaUsuario /= 100
     } 
