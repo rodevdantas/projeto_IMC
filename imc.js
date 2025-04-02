@@ -10,7 +10,7 @@ function calcularIMC()
     var resultado = document.getElementById('exibirResultado');
 
     if (alturaUsuario >= 100) {
-        alturaUsuario = alturaUsuario / 100  
+        alturaUsuario /= 100  
     }
     
     if (nomeUsuario !== '' && alturaUsuario !== '' && pesoUsuario !== '')
@@ -50,7 +50,7 @@ function calcularIMC()
             status = 'extremamente obeso, balofo. Cuide-se.' 
         }
 
-        resultado.textContent = `${nomeUsuario}, seu IMC é ${imc} e você está ${status}`;
+        resultado.innerHTML = `${nomeUsuario}, seu IMC é <strong> ${imc} </strong> e você está ${status}`;
 
     }
 
