@@ -6,8 +6,12 @@ function calcularIMC()
 {
     var nomeUsuario = document.getElementById('inputNome').value.trim();
     var alturaUsuario = parseFloat(document.getElementById('inputAltura').value);
-    var pesoUsuario = parseFloat (document.getElementById('inputPeso').value);
+    var pesoUsuario = parseFloat(document.getElementById('inputPeso').value);
     var resultado = document.getElementById('exibirResultado');
+
+    if (alturaUsuario >= 100) {
+        alturaUsuario = alturaUsuario / 100  
+    }
     
     if (nomeUsuario !== '' && alturaUsuario !== '' && pesoUsuario !== '')
 
@@ -18,12 +22,12 @@ function calcularIMC()
 
         if (imc < 18.5)
         {
-            status = 'abaixo do peso.';
+            status = 'abaixo do peso adequado.';
         }
 
         else if (imc < 25)
         {
-            status = 'com o peso adequado.';
+            status = 'com o peso adequado!';
         }
 
         else if (imc < 30)
@@ -43,7 +47,7 @@ function calcularIMC()
 
         else 
         {
-            status = 'EXTREMAMENTE obeso. Cuide-se para não morrer.' 
+            status = 'extremamente obeso, balofo. Cuide-se.' 
         }
 
         resultado.textContent = `${nomeUsuario}, seu IMC é ${imc} e você está ${status}`;
@@ -52,12 +56,13 @@ function calcularIMC()
 
     else 
     {
-        resultado.textContent = 'Por favor, preencha todos os campos corretamente.';
+        alert('Por favor, preencha todos os campos corretamente.') 
     }
 
 
 
+
 }
-// Desafio: colocar a altura sem o ponto/vírgula e o sistema entender e melhorar o layout
+
 
  
